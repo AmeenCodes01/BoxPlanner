@@ -118,7 +118,7 @@ function App() {
                   );
                 })}
               </ul>
-              <div className="border-2 border-[#46634e] min-h-[150px] min-w-[100%] p-2">
+              <div className="border-2 border-[#46634e] min-h-[80px] min-w-[100%] p-2">
                 <List
                   items={box.tasks}
                   onSelect={onRemoveTaskFromBox}
