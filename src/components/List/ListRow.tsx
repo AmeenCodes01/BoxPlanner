@@ -18,13 +18,13 @@ const ListRow: React.FC<ListRowProps> = ({
     <li
       className="p-2 border-y-[1px] w-[100%] bg-green-900 text-[#80ff31] border-[#FFF275] space-between flex flex-col"
       key={index}>
-      <div className="flex flex-row">
-        <div>{item}</div>
+      <div className="flex flex-row overflow-auto text-wrap">
+        <span className="flex ">{item}</span>
         <div className="justify-end ml-auto">
           {onDel ? (
             <button
               onClick={() => onDel(index)}
-              className="border-[1px] px-[2px] size-[13px] text-xs bg-red-600   "></button>
+              className="border-[1px] px-[2px] mr-2 size-[13px] text-xs bg-red-600   "></button>
           ) : null}
           <Button
             onPress={() => {
